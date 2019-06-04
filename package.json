@@ -1,6 +1,6 @@
 {
   "name": "foodie-history",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get to know what was the last time you checked in on Swarm",
   "main": "dist/index.js",
   "bin": {
