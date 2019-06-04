@@ -12,7 +12,6 @@ export interface IVenueDTO {
 }
 
 export interface ICheckinModel {
-    constructor: { create(dto: ICheckinDTO): ICheckinModel }
     createdAt: number
     shout: string
     venue: IVenueDTO
@@ -21,7 +20,6 @@ export interface ICheckinModel {
 }
 
 export interface IVenueModel {
-    constructor: { create(dto: IVenueDTO): IVenueModel }
     name: string
     location: {
         formattedAddress: string[]
@@ -30,7 +28,6 @@ export interface IVenueModel {
 }
 
 export class CheckinModel implements ICheckinModel {
-    'constructor': typeof CheckinModel
     constructor(
         public createdAt: number,
         public shout: string,
@@ -55,7 +52,6 @@ export class CheckinModel implements ICheckinModel {
 }
 
 export class VenueModel implements IVenueModel {
-    'constructor': typeof VenueModel
     constructor(public name: string, public location: { formattedAddress: string[] }) { }
 
     static create(dto: IVenueDTO): IVenueModel {
