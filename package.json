@@ -16,7 +16,7 @@
     "fuse.js": "3.4.5",
     "nodemon": "1.19.1",
     "ora": "^3.4.0",
-    "ts-node": "8.2.0",
+    "ts-node": "8.6.2",
     "typescript": "3.5.1"
   },
   "devDependencies": {
